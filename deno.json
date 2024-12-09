@@ -1,0 +1,10 @@
+{
+  "name": "@carcajada/lunchbox-core",
+  "version": "1.0.0",
+  "license": "MIT",
+  "exports": "./mod.ts",
+  "imports": {
+    "fresh": "jsr:@fresh/core@^2.0.0-alpha.25",
+    "classnames": "npm:classnames@2.5.1"
+  }
+}
