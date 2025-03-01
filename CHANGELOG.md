@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.4
+
+- Updated the package version number.
+
 ## v1.0.3
 
 - Renamed the library form `lunchbox-core` to `lunchbox/plugin`.
