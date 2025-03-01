@@ -22,9 +22,6 @@ const url =
 /**
  * This function returns a plugin for the Deno compiler that preloads the Libre Calson, Figtree, and
  * FiraCode fonts.
- *
- * @returns {Plugin}
- *  A plugin for the Deno compiler that preloads the Figtree and FiraCode fonts.
  */
 export const lunchbox = {
   name: "lunchbox-fonts",
@@ -33,7 +30,15 @@ export const lunchbox = {
       htmlText: string;
       requiresHydration: boolean;
     };
-  }) => {
+  }): {
+    links: {
+      href: string;
+      as?: string;
+      type?: string;
+      crossorigin?: string;
+      rel?: string;
+    }[];
+  } => {
     ctx.render();
     return {
       links: [
