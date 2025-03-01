@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.7
+
+- Added `gitignore`.
+
 ## v1.0.6
 
 - Changed the plugin to be a constant instead of a function.
