@@ -2,8 +2,5 @@
   "name": "@lunchbox/plugin",
   "version": "1.0.4",
   "license": "MIT",
-  "exports": "./mod.ts",
-  "imports": {
-    "$fresh/": "https://deno.land/x/fresh@1.7.3/"
-  }
+  "exports": "./mod.ts"
 }
