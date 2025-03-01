@@ -10,6 +10,7 @@
  *
  * @module lunchbox-plugin
  */
+import type { Plugin } from "$fresh/server.ts";
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 /**
@@ -26,7 +27,7 @@ const url =
  * @returns {Plugin}
  *  A plugin for the Deno compiler that preloads the Figtree and FiraCode fonts.
  */
-export function lunchbox() {
+export function lunchbox(): Plugin {
   return {
     name: "lunchbox-fonts",
     render: (ctx: {

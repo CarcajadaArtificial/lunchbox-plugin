@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.5
+
+- Added an explicit export type to the plugin.
+
 ## v1.0.4
 
 - Updated the package version number.
