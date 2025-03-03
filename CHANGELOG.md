@@ -12,6 +12,10 @@
 
 ## Version History
 
+### v1.0.10
+
+- Added temporary tailwind v3 transparency colors.
+
 ### v1.0.9
 
 - Added the `tailwind_lunchbox` plugin.

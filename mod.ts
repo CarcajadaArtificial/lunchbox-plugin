@@ -213,23 +213,6 @@ export const fresh_lunchbox = {
  *
  * ---
  *
- * ### `fontSize`
- *
- * These are shortcuts for font-size and line-height. These can be used individually but are already
- * included in the `<Text/>` component in the Lunchbox component library and in the tailwind
- * `typography` plugin.
- *
- * ```html
- * <p class="text-small">This is a small font size.</p>
- * <p class="text-base">This is a base font size.</p>
- * <p class="text-subhead">This is a subhead font size.</p>
- * <p class="text-head">This is a head font size.</p>
- * <p class="text-title">This is a title font size.</p>
- * <p class="text-display">This is a display font size.</p>
- * ```
- *
- * ---
- *
  * ### `typography`
  *
  * This settings are for the tailwind `typography` plugin. These can be used with the `prose` class and
@@ -244,6 +227,7 @@ export const tailwind_lunchbox: ReturnType<typeof plugin> = plugin(
         base: ["Figtree", "system-ui", "ui-sans-serif", "sans-serif"],
         heading: ["Libre Caslon Text", "ui-serif", "serif"],
       },
+      /*
       colors: {
         neutral: "#3d3640",
         brand: {
@@ -269,6 +253,82 @@ export const tailwind_lunchbox: ReturnType<typeof plugin> = plugin(
           },
           page: "#3d3640",
           panel: "#241f26",
+        },
+      },
+      */
+      colors: {
+        neutral: {
+          DEFAULT: "#3d3640",
+          25: "#3d364040",
+          10: "#3d36401a",
+        },
+        brand: {
+          DEFAULT: "#c8d9db",
+          lc: {
+            DEFAULT: "#089969",
+            60: "#08996999",
+            45: "#08996973",
+            30: "#0899694d",
+          },
+          hc: {
+            DEFAULT: "#2b584e",
+            25: "#2b584e40",
+            10: "#2b584e1a",
+          },
+        },
+        error: {
+          lc: {
+            DEFAULT: "#dbc4c5",
+            50: "#dbc4c580",
+          },
+          hc: "#66050d",
+        },
+        page: {
+          DEFAULT: "#eee6f2",
+          50: "#eee6f280",
+        },
+        panel: {
+          DEFAULT: "#ffffff",
+          50: "#ffffff80",
+          35: "#ffffff59",
+          15: "#ffffff26",
+        },
+        d: {
+          neutral: {
+            DEFAULT: "#eee6f2",
+            25: "#eee6f240",
+            10: "#eee6f21a",
+          },
+          brand: {
+            lc: {
+              DEFAULT: "#344747",
+              60: "#34474799",
+              45: "#34474773",
+              30: "#3447474d",
+            },
+            hc: {
+              DEFAULT: "#7dc0af",
+              25: "#7dc0af40",
+              10: "#7dc0af1a",
+            },
+          },
+          error: {
+            lc: {
+              DEFAULT: "#573c4d",
+              50: "#573c4d80",
+            },
+            hc: "#fa96c8",
+          },
+          page: {
+            DEFAULT: "#3d3640",
+            50: "#3d364080",
+          },
+          panel: {
+            DEFAULT: "#241f26",
+            50: "#241f2680",
+            35: "#241f2659",
+            15: "#241f2626",
+          },
         },
       },
       screens: {
@@ -311,14 +371,6 @@ export const tailwind_lunchbox: ReturnType<typeof plugin> = plugin(
           "h-md": "span 3 / span 3",
           "h-sm": "span 2 / span 2",
           "h-xs": "span 1 / span 1",
-        },
-        fontSize: {
-          small: ["0.64rem", "1.1rem"],
-          base: ["1rem", "1.5rem"],
-          subhead: ["1.5625rem", "3rem"],
-          head: ["2.44140625rem", "3rem"],
-          title: ["3.0517578125rem", "4.5rem"],
-          display: ["3.8146972656rem", "4.5rem"],
         },
         typography: {
           DEFAULT: {
